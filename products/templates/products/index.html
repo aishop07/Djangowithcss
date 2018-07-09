@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% block body %}
+<h2>{{request.COOKIES.name}}您好</h2>
+<table style="border:2px solid black;width: 100%;text-align: center;font-size: 24px">
+    <thead style="border:1px solid black">
+        <tr >
+            <th style="border:3px solid black">購物編號</th>
+            <th style="border:3px solid black">購物品名</th>
+            <th style="border:3px solid black">購物價格</th>
+            <th style="border:3px solid black">購物數量</th>
+            <th style="border:3px solid black">購物總價格</th>
+            <th style="border:3px solid black">購物時間</th>
+            
+        </tr>
+    </thead>
+<tbody>
+{% for order in orders %}
+{% with id=order.order_number price=order.price qt=order.qt %}
+<tr>
+    <td style="border:1px solid rgb(169, 135, 207)">{{order.order_number}}</td>
+    <td style="border:1px solid rgb(169, 135, 207)">{{order.product_name}}</td>
+    <td style="border:1px solid rgb(169, 135, 207)">{{order.price}}</td>
+    <td style="border:1px solid rgb(169, 135, 207)">{{order.qt}}</td>
+    <td style="border:1px solid rgb(169, 135, 207)">{% widthratio price 1 qt %}</td>
+    <td style="border:1px solid rgb(169, 135, 207)">{{order.datetime}}</td>
+</tr>
+
+
+
+{% endwith %}
+{% endfor %}
+</tbody>
+</table>
+
+{% endblock %}

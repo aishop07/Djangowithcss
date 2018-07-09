@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static 'styles/mainstyle.css' %}">
+
+  <style>
+    /* * {
+      margin: 0px;
+      padding: 0px;
+      font-family: 微軟正黑體;
+    } */
+
+    /* .container {
+      
+      width: 70%;
+      margin: 15px auto;
+      padding: 30px;
+    } */
+
+    /* nav {
+      border: 3px solid gold;
+      background-color: black;
+      color:snow;
+      margin: 15px auto;
+      padding: 30px;
+    } */
+  </style>
+  <title>無人商店 </title>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="topbar">
+        <div class="social">
+          <a href="#" target="_blank" title="twitter" class="twitter">twitter</a>
+          <a href="#" target="_blank" title="facebook" class="facebook">facebook</a>
+          <a href="#" target="_blank" title="linkedin" class="linkedin">linkedin</a>
+        </div id="menu">
+        <!--close social -->
+        <div class="phone">(02) - 12345678</div>
+        {% include 'nav.html' %}
+        <!-- <div id="menu">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div> -->
+        <!-- close menu -->
+      </div>
+      <!--close topbar -->
+
+      <div class="blacktab">
+        <div class="logo">
+          <a href="#">
+            <img src='{% static  "image/AISHOP.png" %}' alt="Zen Template" />
+          </a>
+        </div>
+      </div>
+      <div class="banner">
+        <img src='{% static  "image/amazon_go.jpeg" %}' height="240" width="880" alt="Zen Banner" />
+      </div>
+    </div>
+    <!-- close header -->
+    <div class="page">
+      <div class="main>"> {% block body %} {% endblock %} <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script> -->
+        {% block scripts %} {% endblock %}
+      </div>
+    </div>
+    <!--close page -->
+    <div class="footer">
+      <div class="html5"></div>
+      <div class="footerbox">
+        <!-- <div class="box1">
+          <ul>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Cookie Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#">FAQ&#39;s</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box2">
+          <ul>
+            <li>
+              <a href="#">Our Vision</a>
+            </li>
+            <li>
+              <a href="#">Why Choose Us?</a>
+            </li>
+            <li>
+              <a href="#">Prices</a>
+            </li>
+            <li>
+              <a href="#">Testimonials</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box3">
+          <ul>
+            <li>
+              <a href="#">Visit Our Blog</a>
+            </li>
+            <li>
+              <a href="#">Eco Policy</a>
+            </li>
+            <li>
+              <a href="#">Media</a>
+            </li>
+            <li>
+              <a href="#">Customer Care</a>
+            </li>
+            <li>
+              <a href="#">Recruitment</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+      <!-- required for legal template use - please do not remove or edit-->
+      <div class="creativecommons">
+        <p>Design By AIEN02 無人商店小組
+        </p>
+      </div>
+      <!-- end required for legal template use - please do not remove or edit -->
+    </div>
+  </div>
+
+
+</body>
+
+</html>
