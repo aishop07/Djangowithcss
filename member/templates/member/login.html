@@ -1,12 +1,15 @@
 {% extends "base.html" %} {% block body %}
-<form method="POST">
+<form method="POST" id = 'fff'>
   {% csrf_token %}
   <div class="form-group">
+    <div id=lll>
     <label for="useremail">電子郵件</label>
+    </div>
     <input style="width: 50%" type="email" class="form-control" id="useremail" name="useremail" aria-describedby="emailHelp" placeholder="Enter email">
   </div>
   <div class="form-group">
-    <label for="userpassword">密碼</label>
+      <div id=lll>
+    <label for="userpassword">密碼</label></div>
     <input style="width: 50%" type="password" class="form-control" name="userpassword" id="userpassword" placeholder="Password">
     <a href='{% url 'member:forget' %}'>忘記密碼？</a>
   </div>

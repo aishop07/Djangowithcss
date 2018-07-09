@@ -2,31 +2,31 @@
 {% block body %}
 <form method="POST">
     {% csrf_token %} 
-    <div class="form-group row">
+    <div class="form-grouprow">
         <label for="username" class="col-sm-2 col-form-label">姓名</label>
         <div class="col-sm-10">
-            <input style="width: 70%" type="text" class="form-control" name="username" id="username" placeholder="User Name">
+            <input style="width: 95%" type="text" class="form-control" name="username" id="username" placeholder="User Name">
         </div>
     </div>
-    <div class="form-group row">
+    <div class="form-grouprow">
         <label for="password" class="col-sm-2 col-form-label">密碼</label>
         <div class="col-sm-10">
-            <input style="width: 70%" type="password" class="form-control" name="password" id="password" placeholder="Password">
+            <input style="width: 95%" type="password" class="form-control" name="password" id="password" placeholder="Password">
         </div>
     </div>
-    <div class="form-group row">
+    <div class="form-grouprow">
         <label for="useremail" class="col-sm-2 col-form-label">電子郵件</label>
         <div class="col-sm-10">
-            <input style="width: 70%" type="email" class="form-control" name="useremail" id="useremail" placeholder="User Email">
+            <input style="width: 95%" type="email" class="form-control" name="useremail" id="useremail" placeholder="User Email">
         </div>
     </div>
-    <div class="form-group row">
+    <div class="form-grouprow">
         <label for="userbirth" class="col-sm-2 col-form-label">生日</label>
         <div class="col-sm-10">
-            <input style="width: 70%" type="date" class="form-control" name="userbirth" id="userbirth" placeholder="Birthday">
+            <input style="width: 95%" type="date" class="form-control" name="userbirth" id="userbirth" placeholder="Birthday">
         </div>
     </div>
-    <div class="form-group row">
+    <div class="form-grouprow">
             <div class="col-sm-10 offset-md-2">
                 <button type="submit" class="btn btn-primary"><i class="fa fa-bath" aria-hidden="true"></i>註冊</button>
             </div>
