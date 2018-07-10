@@ -26,7 +26,7 @@ class Orders(models.Model):
     price = models.IntegerField(null=False)
     qt = models.IntegerField(null=False)
     image = models.CharField(max_length=200,null=False)
-    datetime = models.TextField(max_length=200,null=False)
+    datetime = models.DateField(null=False)
 
     class Meta:
         db_table = "Orders"
