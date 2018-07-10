@@ -5,6 +5,7 @@ class Member(models.Model):
     username = models.TextField()
     password = models.TextField()
     useremail= models.TextField()
+    name= models.TextField()
     userbirth = models.TextField()
     
     class Meta:
